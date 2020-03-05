@@ -9,3 +9,75 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+body {
+    background: #eee;
+}
+.header-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* .header-1 a {
+    display:inline-block;
+
+}
+
+.header-1 small {
+    display:inline-block;
+
+} 
+
+ .header-right form {
+    display:inline-block;
+} */
+
+nav {
+    background: #333;
+  }
+  
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+
+nav a {
+text-decoration: none;
+text-align: center;
+color: #fff;
+display: block;
+padding: 10px;
+}
+
+nav a:hover {
+background-color: #555;
+}
+
+@media screen and (min-width: 768px){
+
+    nav ul{
+        display: flex;
+    }
+
+    nav li{
+        flex: 1 1 0;
+    }
+        
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container__header {
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    /* .container__header h1, .header-right {
+        display: block;
+        text-align: center; */
+    /* } */
+
+}

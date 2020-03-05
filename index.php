@@ -6,32 +6,39 @@
 
   <title>WP Theme N Two</title>
   <meta name="description" content="N-Two">
-  <meta name="author" content="SitePoint">
+  <meta name="author" content="Fakhri">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <h1>Theme N two</h1>
-                <div class="header-right">
-                    <form>
-                        <input type="text" placeholder="Search">
-                    </form>
+        <div class="container__header">
+            <div class="header-1">
+                <h1>
+                    <a href="index.php">
+                        Theme N two
+                    </a>  
+                    <small>My second WP theme</small>
+                </h1>
+                    <div class="header-right">
+                        <form>
+                            <input type="text" placeholder="Search">
+                        </form>
+            </div>        
                 </div>
+                <nav class="nav main-nav">
+                     <div class="container">
+                        <ul>
+                            <li><a href="Home">Home</a></li>
+                            <li><a href="About">About</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                    </div>
+                </nav>
         </div>
     </header>
-    <nav class="nav main-nav">
-        <div class="container">
-            <ul>
-                <li><a href="Home">Home</a></li>
-                <li><a href="About">About</a></li>
-                <li><a href="#"></a>Services</li>
-            </ul>
-        </div>
-    </nav>
 
     <div class="container content">
         <div class="main block">
@@ -67,18 +74,28 @@ By 2023, the company wants to launch 70 missions a year from its two Florida lau
             </article>
         </div>
     </div>
-    <footer class="main-footer">
+    <footer class="footer">
         <div class="container">
-            <div class="footer_left">
+            <div class="footer__left">
                 <p>&copy; 2020 Fakhri Azzouz</p>
             </div>  
-            <div class="footer_left">
+            <div class="footer__right">
             <ul>
                 <li><a href="Home">Home</a></li>
                 <li><a href="About">About</a></li>
                 <li><a href="#"></a>Services</li>
             </ul>
-            </div>       
+            </div> 
+                <div class="sidebar">
+                    <div class="sidebar__block">
+                        <p>SpaceX is planning a huge boost to the number of rocket launches from its
+                         Florida launch sites in the next few years as the company builds
+                         its Starlink satellite megaconstellation while meeting flight demands
+                         from its customers, according to a federal environmental report.</p>
+                         <a class="botton"></a>
+                    </div>
+                </div>
+
         </div>
         
     </footer>
