@@ -9,37 +9,34 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+* {
+    font-family: trade winds;
+}
 body {
     background: #eee;
 }
+
+.main-nav {
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius:12px;
+}
+
 .header-1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #74c5ed;
     
 }
 
-/* .header-1 a {
-    display:inline-block;
-
-}
-
-.header-1 small {
-    display:inline-block;
-
-} 
-
- .header-right form {
-    display:inline-block;
-} */
-
 nav {
-    background: #333;
+    background: #3bb7ff;
   }
   
 nav ul {
 list-style-type: none;
 padding: 0;
+margin: 0;
 }
 
 nav a {
@@ -51,20 +48,22 @@ padding: 10px;
 }
 
 nav a:hover {
-background-color: #555;
+    background-color: #74c5ed;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius:12px;
 }
 
 @media screen and (min-width: 768px){
 
-    nav ul{
+    nav ul {
         display: flex;
     }
 
-    nav li{
+    nav li {
         flex: 1 1 0;
     }
         
-    nav{
+    nav {
         display: flex;
         justify-content: space-between;
     }
@@ -74,10 +73,4 @@ background-color: #555;
         max-width: 960px;
         margin: 0 auto;
     }
-
-    /* .container__header h1, .header-right {
-        display: block;
-        text-align: center; */
-    /* } */
-
 }
