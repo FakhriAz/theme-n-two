@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Trade Winds">
 
   <title>WP Theme N Two</title>
   <meta name="description" content="N-Two">
