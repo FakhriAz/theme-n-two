@@ -9,13 +9,11 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-
 * {
     font-family: trade winds;
 }
-
 body {
-    background: rgb(211, 210, 210);
+    background: #eee;
 }
 
 .main-nav {
@@ -28,8 +26,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background: #74c5ed;
-    padding-right: 2em;
-    padding-left: 2em;   
+    
 }
 
 nav {
@@ -37,17 +34,17 @@ nav {
   }
   
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+list-style-type: none;
+padding: 0;
+margin: 0;
 }
 
 nav a {
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    display: block;
-    padding: 10px;
+text-decoration: none;
+text-align: center;
+color: #fff;
+display: block;
+padding: 10px;
 }
 
 nav a:hover {
@@ -56,7 +53,7 @@ nav a:hover {
     border-bottom-left-radius:12px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
 
     nav ul {
         display: flex;
@@ -77,72 +74,3 @@ nav a:hover {
         margin: 0 auto;
     }
 }
-
-/* Main content styling */
-.container-content, .footer {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.post .meta {
-    margin: 0;
-}
-
-.post h2 {
-    margin-bottom: 0;
-}
-
-.post h2, .post .meta {
-    background: #74c5ed;
-    padding-left: 1em;
-}
-
-.post .meta {
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius:12px;
-}
-
-.botton__post {
-    background: #3bb7ff;
-    padding: 1em;
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius:12px;
-}
-
-.footer__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #74c5ed;
-}
-
-.container__footer {
-    padding-right: 2em;
-    padding-left: 2em;
-    background: #74c5ed;
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius:12px;
-}
-
-.container__footer ul {
-    display: flex;
-    align-items: center;
-    align-items: stretch; /* Default */
-    justify-content: space-between;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.container__footer li {  
-    display: block;
-    flex: 0 1 auto; /* Default */
-    list-style-type: none;
-}
-
-.container__footer ul  {
-    display: flex;
-    align-items: center;
-}
-
