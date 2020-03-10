@@ -39,11 +39,6 @@
                          ?>
 
                             <?php wp_nav_menu($args); ?>
-                        <!-- <ul>
-                            <li><a href="Home">Home</a></li>
-                            <li><a href="About">About</a></li>
-                            <li><a href="#">Services</a></li>
-                        </ul> -->
                     </div>
                 </nav>
         </div>
