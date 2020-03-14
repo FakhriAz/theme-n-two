@@ -85,25 +85,25 @@ nav a:hover {
     margin: 0 auto;
 }
 
-.post .meta {
+.posts .meta {
     margin: 0;
 }
 
-.post h2 {
+.posts h2 {
     margin-bottom: 0;
 }
 
-.post h2, .post .meta {
+.posts h2, .posts .meta {
     background: #74c5ed;
     padding-left: 1em;
 }
 
-.post .meta {
+.posts .meta {
     border-bottom-right-radius: 12px;
     border-bottom-left-radius:12px;
 }
 
-.botton__post {
+.botton__posts {
     background: #3bb7ff;
     padding: 1em;
     border-bottom-right-radius: 12px;
