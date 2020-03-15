@@ -85,23 +85,24 @@ nav a:hover {
     margin: 0 auto;
 }
 
-.posts .meta {
+.meta {
     margin: 0;
 }
 
-.posts h2 {
+.type-post ~ h2 {
     margin-bottom: 0;
 }
 
-.posts h2, .posts .meta {
+.type-post ~ h2, .meta {
     background: #74c5ed;
     padding-left: 1em;
 }
 
-.posts .meta {
+.meta {
     border-bottom-right-radius: 12px;
     border-bottom-left-radius:12px;
 }
+
 
 .botton__posts {
     background: #3bb7ff;
