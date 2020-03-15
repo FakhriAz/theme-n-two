@@ -49,6 +49,7 @@
             <article class="posts">
                 <?php if(have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>
+                    <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>></div>
                         <h2><?php the_title(); ?></h2>
                         <p class="meta">
                             Posted at
@@ -59,7 +60,7 @@
                             <?php the_category( ' ' ); ?>
                             </a>    
                             </p>
-                        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>><?php the_excerpt(); ?></div>
+                        <?php the_excerpt(); ?>
                 <a class="botton__post" href="#">Read More</a>
             </article>
                 <?php endwhile; ?>
