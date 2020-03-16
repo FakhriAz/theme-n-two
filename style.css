@@ -79,6 +79,12 @@ nav a:hover {
 }
 
 /* Main content styling */
+
+article .post-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
 .container-content, .footer {
     width: 100%;
     max-width: 960px;
@@ -146,4 +152,3 @@ nav a:hover {
     display: flex;
     align-items: center;
 }
-

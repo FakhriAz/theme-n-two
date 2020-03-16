@@ -49,7 +49,7 @@
             <article class="posts">
                 <?php if(have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>
-                    <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>></div>
+                        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>></div>
                         <h2><?php the_title(); ?></h2>
                         <p class="meta">
                             Posted at
@@ -59,9 +59,14 @@
                             <?php the_author(); ?>
                             <?php the_category( ' ' ); ?>
                             </a>    
-                            </p>
+                        </p>
+                        <?php if (has_post_thumbnail()) : ?>
+                            <div class="post-thumbnail">
+                                <?php the_post_thumbnail(); ?>
+                            </div>
+                        <?php endif; ?>
                         <?php the_excerpt(); ?>
-                <a class="botton__post" href="#">Read More</a>
+                <a class="botton__posts" href="<?php the_permalink(); ?>">Read More</a>
             </article>
                 <?php endwhile; ?>
             <?php else : ?>
