@@ -26,7 +26,8 @@
                 </h1>
                     <div class="header-right">
                         <form method="get" action="<?php esc_url(home_url('/')); ?>">
-                            <input type="text" name="form__input" placeholder="Search">
+                            <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" />
+                            <!-- <input type="text" name="form__input" placeholder="Search"> -->
                         </form>
             </div>        
                 </div>
