@@ -15,7 +15,8 @@
                             By
                             <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"> 
                             <?php the_author(); ?>
-                            <?php the_category( ' ' ); ?>
+                            <?php the_category( '> ' ); ?>
+                            <?php the_tags('Tags: ', ', ', '<br />'); ?>   
                             </a>    
                         </p>
                         <?php if (has_post_thumbnail()) : ?>
