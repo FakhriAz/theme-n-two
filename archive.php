@@ -16,7 +16,16 @@
                              the_post(); 
                              echo "Archive's Author: " . get_the_author();
                              rewind_posts(); 
-                         }
+                        }
+                         elseif ( is_day() ) {
+                            echo 'Daily Archives: ' . get_the_date();
+                        } elseif ( is_month() ) {
+                            echo 'Monthly Archives: ' . get_the_date( 'F Y' );
+                        } elseif ( is_year() ) {
+                            echo 'Yearly Archives: ' . get_the_date( 'Y' );
+                        } else {
+                            echo 'Archives: ';
+                        }
                     ?>
                     <?php while (have_posts()) : the_post(); ?>
                         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>></div>
@@ -44,13 +53,12 @@
             <?php endif; ?>
         </div>
         <div class="sidebar">
-                    <div class="sidebar__block">
-                        <p>SpaceX is planning a huge boost to the number of rocket launches from its
-                         Florida launch sites in the next few years as the company builds
-                         its Starlink satellite megaconstellation while meeting flight demands
-                         from its customers, according to a federal environmental report.</p>
-                         <a class="botton"></a>
-                    </div>
-                </div>
+                <!-- Top right sidebar widget start -->
+                <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
+                <?php dynamic_sidebar( 'sidebar1' ); ?> 
+                <?php else : ?>
+                <!-- Time to add some widgets! -->
+            <?php endif; ?>
+        </div>
     </div>
 <?php get_footer(); ?>
