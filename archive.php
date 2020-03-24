@@ -16,17 +16,7 @@
                              the_post(); 
                              echo "Archive's Author: " . get_the_author();
                              rewind_posts(); 
-                        }
-                        elseif ( is_day() ) {
-                            echo 'Daily Archives: ' . get_the_date();
-                        } elseif ( is_month() ) {
-                            echo 'Monthly Archives: ' . get_the_date( 'F Y' );
-                        } elseif ( is_year() ) {
-                            echo 'Yearly Archives: ' . get_the_date( 'Y' );
-                        } else {
-                            echo 'Archives: ';
-                        }
-
+                         }
                     ?>
                     <?php while (have_posts()) : the_post(); ?>
                         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>></div>
