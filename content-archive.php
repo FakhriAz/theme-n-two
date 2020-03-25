@@ -29,8 +29,12 @@
                                 <?php the_post_thumbnail(); ?>
                             </div>
                         <?php endif; ?>
+                        <?php if(is_single()) : ?>
+                            <?php the_content(); ?>
+                        <?php else : ?>
                         <?php the_excerpt(); ?>
                 <a class="botton__posts" href="<?php the_permalink(); ?>">Read More</a>
+                        <?php endif; ?>    
             </article>
                 <?php endwhile; ?>
             <?php else : ?>
