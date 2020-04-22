@@ -30,14 +30,5 @@
                     <?php echo apautop('We did no find what you are looking for.')?>
             <?php endif; ?>
         </div>
-        <div class="sidebar">
-                    <div class="sidebar__block">
-                        <p>SpaceX is planning a huge boost to the number of rocket launches from its
-                         Florida launch sites in the next few years as the company builds
-                         its Starlink satellite megaconstellation while meeting flight demands
-                         from its customers, according to a federal environmental report.</p>
-                         <a class="botton"></a>
-                    </div>
-                </div>
     </div>
 <?php get_footer(); ?>

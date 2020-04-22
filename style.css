@@ -78,6 +78,17 @@ nav a:hover {
     }
 }
 
+/* Post aside */
+
+.post-aside{
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    background-color: #74c5ed; 
+    border-radius: 12px; 
+}
+
 /* Main content styling */
 
 .post-thumbnail img {
