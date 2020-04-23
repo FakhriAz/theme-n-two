@@ -26,6 +26,6 @@
     <a class="botton__posts" href="<?php the_permalink(); ?>">Read More</a>
 </article>
     <?php else: ?>
-        <?php echo apautop('We did no find what you are looking for.')?>
+        <?php echo wpautop('We did no find what you are looking for.')?>
     <?php endif; ?>
     </div>
