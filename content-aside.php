@@ -1,4 +1,4 @@
-<article class="post-aside">
+<article class="post post-aside">
     <h3>
         <?php the_title(); ?>
     </h3>
