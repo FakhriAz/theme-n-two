@@ -78,14 +78,26 @@ nav a:hover {
     }
 }
 
-/* Post aside */
+/* Post aside & Post link  */
 
-.post-aside{
+.post-aside,
+.post-link {
     padding-right: 1em;
     padding-left: 1em;
     margin-top: .5em;
     margin-bottom: .5em;
     background-color: #74c5ed; 
+    border-radius: 12px; 
+}
+
+/* post status */
+.post-status {
+    text-align: center;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    background-color: #737c81; 
     border-radius: 12px; 
 }
 
