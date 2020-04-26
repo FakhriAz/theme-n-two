@@ -90,6 +90,14 @@ nav a:hover {
     border-radius: 12px; 
 }
 
+.page {
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    border-radius: 12px;
+}
+
 /* post status */
 .post-status {
     text-align: center;
