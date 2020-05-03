@@ -18,4 +18,6 @@
 
     add_action('after_setup_theme', 'n_two_theme_support');
 
+    // Customizer File
+    require get_template_directory(). '/inc/customizer.php';
 ?>
