@@ -43,7 +43,37 @@
                 </nav>
         </div>
     </header>
+        <!-- Front page 2 columns -->
+        <div class="container__one">    
+            <div class="container__one column__one">
+                <h1><?php echo get_theme_mod('showcase_heading', 'Default heading') ?></h1>
+                <p><?php echo get_theme_mod('showcase_text', 'Default paragraph') ?></p>
+                <div class="three_images">
+                    <div class="img__1">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div class="img__2">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div class="img__3">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </div>
+                <a href="<?php echo get_theme_mod('btn_url','www.test.com') ?>"><?php echo get_theme_mod('btn_text') ?></a>
+            </div>
 
+            <div class="container__one column__two">
+                <style>
+                    .column__two{
+                        background: url(<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'/img/showcase.jpg'); ?>) no-repeat center center;
+                    }
+                </style>
+                <h3>Column2</h3>
+        </div>
+    </div>
     </div>
     <footer class="footer">
         <div class="container__footer">
