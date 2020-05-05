@@ -69,6 +69,7 @@
                 <style>
                     .column__two{
                         background: url(<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'/img/showcase.jpg'); ?>) no-repeat center center;
+                        background-size: cover;
                     }
                 </style>
                 <h3>Column2</h3>
