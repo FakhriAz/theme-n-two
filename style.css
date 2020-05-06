@@ -111,6 +111,11 @@ nav a:hover {
     } 
 }
 
+/* 3 images in col1 front-page */
+.img__1 img {
+    width: 80px;
+    height: 80px;
+}
 /* Post aside & Post link  */
 
 .post-aside,
