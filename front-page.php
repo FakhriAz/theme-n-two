@@ -50,8 +50,8 @@
                 <p><?php echo get_theme_mod('showcase_text', 'Default paragraph') ?></p>
                 <div class="three_images">
                     <div class="img__1">
-                        <img src="" alt="">
-                        <p></p>
+                        <img src="<?php echo get_theme_mod('small_image1', get_bloginfo('template_url').'/img/breakfast-1.jpg'); ?>" alt="breakfast image">
+                        <p>Test text</p>
                     </div>
                     <div class="img__2">
                         <img src="" alt="">
