@@ -46,12 +46,12 @@
         <!-- Front page 2 columns -->
         <div class="container__one">    
             <div class="container__one column__one">
-                <h1><?php echo get_theme_mod('showcase_heading', 'Default heading') ?></h1>
-                <p><?php echo get_theme_mod('showcase_text', 'Default paragraph') ?></p>
+                <h1><?php echo get_theme_mod('showcase_1_heading', 'Default heading') ?></h1>
+                <p><?php echo get_theme_mod('showcase_1_text', 'Default paragraph') ?></p>
                 <div class="three_images">
                     <div class="img__1">
-                        <img src="<?php echo get_theme_mod('small_image1', get_bloginfo('template_url').'/img/breakfast-1.jpg'); ?>" alt="breakfast image">
-                        <p>Test text</p>
+                        <img src="<?php echo get_theme_mod('small_image1', get_bloginfo('template_url').'/img/lunch-1.jpg'); ?>" alt="lunch image">
+                        <p></p>
                     </div>
                     <div class="img__2">
                         <img src="" alt="">
@@ -68,7 +68,7 @@
             <div class="container__one column__two">
                 <style>
                     .column__two{
-                        background: url(<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'/img/showcase.jpg'); ?>) no-repeat center center;
+                        background: url(<?php echo get_theme_mod('showcase_2_image', get_bloginfo('template_url').'/img/showcase.jpg'); ?>) no-repeat center center;
                         background-size: cover;
                     }
                 </style>
