@@ -51,15 +51,15 @@
                 <div class="three_images">
                     <div class="img__1">
                         <img src="<?php echo get_theme_mod('small_image1', get_bloginfo('template_url').'/img/lunch-1.jpg'); ?>" alt="lunch image">
-                        <p></p>
+                        <p><?php echo get_theme_mod('showcase_1img1_text', 'Default paragraph') ?></p>
                     </div>
                     <div class="img__2">
-                        <img src="" alt="">
-                        <p></p>
+                    <img src="<?php echo get_theme_mod('small_image2', get_bloginfo('template_url').'/img/lunch-2.jpg'); ?>" alt="lunch image">
+                        <p><?php echo get_theme_mod('showcase_2img2_text', 'Default paragraph') ?></p>
                     </div>
                     <div class="img__3">
-                        <img src="" alt="">
-                        <p></p>
+                    <img src="<?php echo get_theme_mod('small_image3', get_bloginfo('template_url').'/img/lunch-3.jpg'); ?>" alt="lunch image">
+                        <p><?php echo get_theme_mod('showcase_3img3_text', 'Default paragraph') ?></p>
                     </div>
                 </div>
                 <a href="<?php echo get_theme_mod('btn_url','www.test.com') ?>"><?php echo get_theme_mod('btn_text') ?></a>
