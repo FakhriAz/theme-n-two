@@ -72,7 +72,6 @@
                         background-size: cover;
                     }
                 </style>
-                <h3>Column2</h3>
         </div>
     </div>
     </div>
