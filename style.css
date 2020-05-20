@@ -91,30 +91,61 @@ nav a:hover {
 .column__one {
     background-color: grey;
     width: 100%;
-    height: 80vh; 
+    height: 120vh; 
 }
 
 .column__two {
     width: 100%;
-    height: 80vh;
+    height: 120vh;
 }
 
 @media all and (min-width: 600px) {
     .column__one {
         width: 50%;
-        height: 80vh; 
+        height: 120vh; 
     }
     
     .column__two {
         width: 50%;
-        height: 80vh;
+        height: 120vh;
     } 
 }
 
+/* text in column 1 */
+
+.column__one > p {
+    text-align: center;  
+ }
+
+.column__one > h1 {
+    text-align: center;  
+ }
+
 /* 3 images in col1 front-page */
-.img__1 img {
+.img__1 img,
+ .img__2 img,
+  .img__3 img {
     width: 80px;
     height: 80px;
+    border-radius: 50%;
+}
+
+.three_images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img__1 ,
+ .img__2 ,
+  .img__3  {
+    text-align: center;
+}
+
+.img__1 > p ,
+ .img__2 > p,
+  .img__3 > p {
+    overflow: auto;
 }
 /* Post aside & Post link  */
 
