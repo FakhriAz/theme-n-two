@@ -20,7 +20,7 @@ body {
 
 .main-nav {
     border-bottom-right-radius: 12px;
-    border-bottom-left-radius:12px;
+    border-bottom-left-radius: 12px;
 }
 
 .header-1 {
@@ -29,13 +29,13 @@ body {
     justify-content: space-between;
     background: #74c5ed;
     padding-right: 2em;
-    padding-left: 2em;   
+    padding-left: 2em;
 }
 
 nav {
     background: #3bb7ff;
-  }
-  
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -53,24 +53,20 @@ nav a {
 nav a:hover {
     background-color: #74c5ed;
     border-bottom-right-radius: 12px;
-    border-bottom-left-radius:12px;
+    border-bottom-left-radius: 12px;
 }
 
 @media screen and (min-width: 768px) {
-
     nav ul {
         display: flex;
     }
-
     nav li {
         flex: 1 1 0;
     }
-        
     nav {
         display: flex;
         justify-content: space-between;
     }
-
     .container__header {
         width: 100%;
         max-width: 960px;
@@ -84,6 +80,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    /* align-content: space-around; */
     margin: auto;
     max-width: 960px;
 }
@@ -91,40 +88,38 @@ nav a:hover {
 .column__one {
     background-color: grey;
     width: 100%;
-    height: 120vh; 
+    height: 80vh;
 }
 
 .column__two {
     width: 100%;
-    height: 120vh;
+    height: 80vh;
 }
 
 @media all and (min-width: 600px) {
     .column__one {
         width: 50%;
-        height: 120vh; 
+        height: 80vh;
     }
-    
     .column__two {
         width: 50%;
-        height: 120vh;
-    } 
+        height: 80vh;
+    }
 }
 
 /* text in column 1 */
 
-.column__one > p {
-    text-align: center;  
- }
+.column__one>p {
+    text-align: center;
+}
 
-.column__one > h1 {
-    text-align: center;  
- }
+.column__one>h1 {
+    text-align: center;
+}
 
 /* 3 images in col1 front-page */
-.img__1 img,
- .img__2 img,
-  .img__3 img {
+
+.img__1 img, .img__2 img, .img__3 img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -136,27 +131,30 @@ nav a:hover {
     align-items: center;
 }
 
-.img__1 ,
- .img__2 ,
-  .img__3  {
+.img__1,
+ .img__2,
+  .img__3 {
     text-align: center;
 }
 
-.img__1 > p ,
+.img__1 > p,
  .img__2 > p,
   .img__3 > p {
-    overflow: auto;
-}
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}   
+
 /* Post aside & Post link  */
 
-.post-aside,
-.post-link {
+.post-aside, .post-link {
     padding-right: 1em;
     padding-left: 1em;
     margin-top: .5em;
     margin-bottom: .5em;
-    background-color: #74c5ed; 
-    border-radius: 12px; 
+    background-color: #74c5ed;
+    border-radius: 12px;
 }
 
 .page {
@@ -168,14 +166,15 @@ nav a:hover {
 }
 
 /* post status */
+
 .post-status {
     text-align: center;
     padding-right: 1em;
     padding-left: 1em;
     margin-top: .5em;
     margin-bottom: .5em;
-    background-color: #737c81; 
-    border-radius: 12px; 
+    background-color: #737c81;
+    border-radius: 12px;
 }
 
 /* Main content styling */
@@ -195,26 +194,25 @@ nav a:hover {
     margin: 0;
 }
 
-.type-post ~ h2 {
+.type-post~h2 {
     margin-bottom: 0;
 }
 
-.type-post ~ h2, .meta {
+.type-post~h2, .meta {
     background: #74c5ed;
     padding-left: 1em;
 }
 
 .meta {
     border-bottom-right-radius: 12px;
-    border-bottom-left-radius:12px;
+    border-bottom-left-radius: 12px;
 }
-
 
 .botton__posts {
     background: #3bb7ff;
     padding: 1em;
     border-bottom-right-radius: 12px;
-    border-bottom-left-radius:12px;
+    border-bottom-left-radius: 12px;
 }
 
 .footer__container {
@@ -229,26 +227,28 @@ nav a:hover {
     padding-left: 2em;
     background: #74c5ed;
     border-bottom-right-radius: 12px;
-    border-bottom-left-radius:12px;
+    border-bottom-left-radius: 12px;
 }
 
 .container__footer ul {
     display: flex;
     align-items: center;
-    align-items: stretch; /* Default */
+    align-items: stretch;
+    /* Default */
     justify-content: space-between;
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-.container__footer li {  
+.container__footer li {
     display: block;
-    flex: 0 1 auto; /* Default */
+    flex: 0 1 auto;
+    /* Default */
     list-style-type: none;
 }
 
-.container__footer ul  {
+.container__footer ul {
     display: flex;
     align-items: center;
 }
