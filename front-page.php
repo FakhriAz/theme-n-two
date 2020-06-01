@@ -43,7 +43,6 @@
             </nav>
         </div>
     </header>
-    <!-- Front page 2 columns -->
     <div class="container__one">
         <div class="column__one">
             <h1><?php echo get_theme_mod('showcase_1_heading', 'Default heading') ?></h1>
@@ -73,6 +72,12 @@
                 }
             </style>
         </div>
+    </div>
+    <!-- Second container, under container__one -->
+    <div class="container__two">
+        <button type="button">
+                Book a table
+        </button>            
     </div>
     </div>
     <footer class="footer">
