@@ -76,7 +76,7 @@
     <!-- Second container, under container__one -->
     <div class="container__two">
         <button type="button">
-                Book a table
+                <a href="<?php echo get_theme_mod('btn_url_panel01', 'http://www.test.com'); ?>"><?php echo get_theme_mod('btn_text_panel01'); ?></a>
         </button>            
     </div>
     </div>
