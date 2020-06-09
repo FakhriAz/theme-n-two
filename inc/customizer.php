@@ -134,28 +134,40 @@ function n_two_customize_register($wp_customize)
     'priority'  => 4
   ));
 
-  $wp_customize->add_setting('btn_url', array(
-    'default'   => _x('http://testtt.com', 'n_two'),
+  // 3 images in col 1 end
+
+  // Start panel 1 with button & text only
+
+  $wp_customize->add_section('showcase_panel_01', array(
+    'title'   => __('Panel_01', 'n_two'),
+    'description' => sprintf(__('Options for showcase', 'n_two')),
+    'priority'    => 155
+  ));
+
+  $wp_customize->add_setting('btn_url_panel01', array(
+    'default'   => _x('http://test.com', 'n_two'),
     'type'      => 'theme_mod'
   ));
 
-  $wp_customize->add_control('btn_url', array(
+  $wp_customize->add_control('btn_url_panel01', array(
     'label'   => __('Button URL', 'n_two'),
-    'section' => 'showcase_1',
+    'section' => 'showcase_panel_01',
     'priority'  => 5
   ));
 
-  $wp_customize->add_setting('btn_text', array(
+  $wp_customize->add_setting('btn_text_panel01', array(
     'default'   => _x('Read More', 'n_two'),
     'type'      => 'theme_mod'
   ));
 
-  $wp_customize->add_control('btn_text', array(
+  $wp_customize->add_control('btn_text_panel01', array(
     'label'   => __('Button Text', 'n_two'),
-    'section' => 'showcase_1',
+    'section' => 'showcase_panel_01',
     'priority'  => 6
   ));
 
-  // 3 images in col 1 end
+
+  // Panel 1 with text & button ends here
+
 }
 add_action('customize_register', 'n_two_customize_register');
