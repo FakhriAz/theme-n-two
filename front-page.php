@@ -79,6 +79,20 @@
                 <a href="<?php echo get_theme_mod('btn_url_panel01', 'http://www.test.com'); ?>"><?php echo get_theme_mod('btn_text_panel01'); ?></a>
         </button>            
     </div>
+    <!-- Container three -->
+    <div class="container__three">        
+        <div class="column__3__1">
+        <style>
+                .column__3__1 {
+                    background-color: white;
+                    background-size: cover;
+                }
+            </style>        
+        </div>
+        <div class="column__3__2">
+
+        </div>            
+    </div>    
     </div>
     <footer class="footer">
         <div class="container__footer">
