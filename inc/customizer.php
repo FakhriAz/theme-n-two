@@ -169,5 +169,27 @@ function n_two_customize_register($wp_customize)
 
   // Panel 1 with text & button ends here
 
+  // Container 3 image cover starts
+
+  $wp_customize->add_section('showcase_3', array(
+    'title'   => __('Showcase 3 Image Cover', 'n_two'),
+    'description' => sprintf(__('Options for showcase_3', 'n_two')),
+    'priority'    => 180
+  ));
+
+  $wp_customize->add_setting('showcase_3_image', array(
+    'default'   => get_bloginfo('template_directory') . '/img/showcase-03.jpg',
+    'type'      => 'theme_mod'
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'showcase_image__3', array(
+    'label'   => __('Showcase Cover Image 3', 'n_two'),
+    'section' => 'showcase_3',
+    'settings' => 'showcase_3_image',
+    'priority'  => 1
+  )));
+
+  // Container 3 image cover ends
+
 }
 add_action('customize_register', 'n_two_customize_register');
