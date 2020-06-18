@@ -82,15 +82,16 @@
     <!-- Container three -->
     <div class="container__three">        
         <div class="column__3__1">
-        <style>
+            <style>
                 .column__3__1 {
-                    background-color: white;
+                    background: url(<?php echo get_theme_mod('showcase_3_image', get_bloginfo('template_url') . '/img/showcase-03.jpg'); ?>) no-repeat center center;
                     background-size: cover;
                 }
             </style>        
         </div>
         <div class="column__3__2">
-
+            <h1><?php echo get_theme_mod('showcase_3_heading', 'Default heading') ?></h1>
+            <p><?php echo get_theme_mod('showcase_3_text', 'Default paragraph') ?></p>
         </div>            
     </div>    
     </div>
