@@ -191,5 +191,41 @@ function n_two_customize_register($wp_customize)
 
   // Container 3 image cover ends
 
+  // Container 3 text heading starts
+
+  $wp_customize->add_section('showcase 3 container 3', array(
+    'title'   => __('Showcase 3 Text Heading & Text', 'n_two'),
+    'description' => sprintf(__('Options for showcase', 'n_two')),
+    'priority'    => 190
+  ));
+
+  $wp_customize->add_setting('showcase_3_heading', array(
+    'default'   => _x('Custom Wordpress Theme', 'n_two'),
+    'type'      => 'theme_mod'
+  ));
+
+  $wp_customize->add_control('showcase_3_heading', array(
+    'label'   => __('Heading', 'n_two'),
+    'section' => 'showcase 3 container 3',
+    'priority'  => 3
+  ));
+  // Container 3 text heading ends
+
+  // Container 3 text paragraph starts
+
+  $wp_customize->add_setting('showcase_3_text', array(
+    'default'   => _x('Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam', 'n_two'),
+    'type'      => 'theme_mod'
+  ));
+
+  $wp_customize->add_control('showcase_3_text', array(
+    'label'   => __('Text', 'n_two'),
+    'section' => 'showcase 3 container 3',
+    'priority'  => 4
+  ));
+
+  // Container 3 text paragraph ends
+
+
 }
 add_action('customize_register', 'n_two_customize_register');
