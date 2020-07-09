@@ -80,10 +80,12 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    /* align-content: space-around; */
+    /* align-content: space-between; */
     margin: auto;
     max-width: 960px;
     height: fit-content;
+    /* align-items: center; */
+    /* justify-content: space-around; */
 }
 
 .column__one {
@@ -140,8 +142,8 @@ nav a:hover {
 
 .three_images {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:space-evenly;
+    /* align-items: center; */
 }
 
 .img__1,
@@ -153,11 +155,58 @@ nav a:hover {
 .img__1 > p,
  .img__2 > p,
   .img__3 > p {
-    display: -webkit-box;
+    /* display: -webkit-box;
     -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;  
+    -webkit-box-orient: vertical;   */
     overflow: hidden;
-}   
+    text-align: center;
+    height: 120px;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+} 
+
+/* Container 3 starts here */
+
+.container__three {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* align-content: space-around; */
+    margin: auto;
+    max-width: 960px;
+    height: fit-content;
+}
+
+.column__3__1 {
+    width: 100%;
+    height: 300px;
+}
+
+.column__3__2 {
+    background-color: grey;
+    width: 100%;
+    height: fit-content;
+}
+
+@media all and (min-width: 600px) {
+    .column__3__1 {
+        width: 50%;
+        height: auto;
+    }
+
+    .column__3__2 {
+        width: 50%;
+        height: fit-content;
+    }
+}
+
+.column__3__2>h1, .column__3__2>p {
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+    text-align: center;
+}
+
+/* Container 3 ends here */
 
 /* Post aside & Post link  */
 
