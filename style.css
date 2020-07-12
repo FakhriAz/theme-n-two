@@ -89,7 +89,7 @@ nav a:hover {
 }
 
 .column__one {
-    background-color: grey;
+    background-color: #c7d0e0;
     width: 100%;
     height: fit-content;
 }
@@ -183,7 +183,7 @@ nav a:hover {
 }
 
 .column__3__2 {
-    background-color: grey;
+    background-color: #c7d0e0;
     width: 100%;
     height: fit-content;
 }
@@ -235,7 +235,7 @@ nav a:hover {
     padding-left: 1em;
     margin-top: .5em;
     margin-bottom: .5em;
-    background-color: #737c81;
+    background-color: #c7d0e0;
     border-radius: 12px;
 }
 
