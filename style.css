@@ -30,6 +30,17 @@ body {
     background: #74c5ed;
     padding-right: 2em;
     padding-left: 2em;
+    flex-direction: column;
+}
+
+div > div > form {
+    margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 520px) {
+    .header-1 {
+        flex-direction: row;
+    }
 }
 
 nav {
