@@ -16,6 +16,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 body {
     background: rgb(211, 210, 210);
+    max-width: 960px;
+    margin: auto;
 }
 
 .main-nav {
@@ -249,6 +251,9 @@ nav a:hover {
     background-color: #c7d0e0;
     border-radius: 12px;
 }
+
+/* Archive  */
+
 
 /* Main content styling */
 
