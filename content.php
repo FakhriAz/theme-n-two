@@ -24,7 +24,6 @@
     <?php if (is_home()): ?>
         <?php the_excerpt(); ?>
     <a class="botton__posts" href="<?php the_permalink(); ?>">Read More</a>
-</article>
     <?php else: ?>
         <?php echo wpautop('We did no find what you are looking for.')?>
     <?php endif; ?>
