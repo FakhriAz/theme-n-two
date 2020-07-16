@@ -24,6 +24,7 @@
                             </div>
                         <?php endif; ?>
                         <?php the_content(); ?>
+                        <?php comments_template(); ?> 
             </article>
                 <?php endwhile; ?>
             <?php else : ?>
