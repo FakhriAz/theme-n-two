@@ -299,6 +299,15 @@ nav a:hover {
     border-bottom-left-radius: 12px;
 }
 
+button {
+    border-radius: 17px;
+    box-shadow: rgba(48, 47, 47, 0.3) 0px 0px 15px 0px;
+}
+
+button > a {
+    font-weight: bold;
+}
+
 .footer__container {
     display: flex;
     align-items: center;
