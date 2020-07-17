@@ -7,6 +7,9 @@
 		</h4>
 <?php endif; ?>
     <p class="meta">
+            <a class="archive__title" href="<?php the_permalink(); ?>">
+			    <?php the_title(); ?>
+		    </a>
         Posted at
         <?php the_time('F j, Y g: i a'); ?>
         By
